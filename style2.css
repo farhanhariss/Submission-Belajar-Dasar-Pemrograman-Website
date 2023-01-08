@@ -1,0 +1,756 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASIC  */
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(font/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(font/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(font/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(font/Poppins-Regular.ttf);
+}
+
+
+body{
+    background-color: #fff;
+    min-height: 100vh;
+    background-image: url(assets/memphis-mini.png);
+    font-family: Roboto-Regular;
+}
+
+.pembatas{
+    height: 8vh;
+    background-color: #1B9CE3;
+    margin: 2em 0;
+}
+
+.button{
+    background-color: #1B9CE3;
+    font-family: Poppins-Medium;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    width: fit-content;
+    margin-top: 1.5em;
+}
+
+.button:hover {
+    background-color: #D1D1D1;
+    color: #000;
+    transition: 0.6s;
+    cursor: pointer;
+}
+/* AKHIR BASIC */
+
+
+/* BAGIAN HEADER */
+header{
+    position: fixed;
+    background-color: #1B9CE3 ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 70px;
+    z-index: 10000;
+    font-family: Poppins-Medium;
+}
+
+.burger-nav img{
+    display: none;
+}
+
+header .logo-brebes{
+    display: flex;
+    align-items: center;
+}
+
+.logo-brebes a{
+    margin-left: 20px;
+}
+
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width: 70px;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+
+header li a
+{
+    padding: 15px;
+}
+
+header li :hover
+{
+    background-color: #fff;
+    border-radius: 10px;
+    color: #1B9CE3;
+}
+
+.banner img{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-size:cover;
+}
+
+/* ini header kalo diturunin  */
+header.sticky .logo,
+header.sticky ul li a {
+    color: #000;
+}
+
+header.sticky{
+    padding: 10px 70px;
+    background: #D1D1D1; /*nanti diganti warna kalo diturunin*/
+}
+/* akhir dari header kalo diturunin */
+/* AKHIR BAGIAN HEADER */
+
+/* BAGIAN CONTENT */
+
+main{
+    text-align: center;
+}
+
+/* Judul setiap content */
+.title-content{
+    margin-bottom: 1.5em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    padding: 10px;
+    ;
+}
+
+.first-title{
+    margin-bottom: 0.2em;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: Poppins-Medium;
+
+}
+
+.description-title{
+    font-size: 1.25em;
+    margin-top: 0.3em;
+    font-family: Roboto-Regular;
+
+}
+
+/*Akhir judul setiap content*/
+
+/* isi konten */
+
+/* TENTANG BREBES  */
+.contain-content{
+    text-align: center;
+    margin-top: 1em;
+}
+
+#penjelasan-visi {
+    margin-top: 10px;
+    margin-bottom: 1em;
+}
+
+.text-content {
+    width: 60vw;
+    line-height: 25px;
+    text-align: justify;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sub-contain ol{
+    text-align: justify;
+}
+.sub-title {
+    font-weight: 700;
+    font-size: 1.25em;
+    font-family: Poppins-Medium;
+}
+
+#visi-brebes{
+    font-family: Roboto-Medium;
+}
+
+
+/* BUPATI & WAKIL BUPATI */
+#foto-leader{
+    display: flex;
+    margin-top: 1.5em;
+    justify-content: space-evenly ;
+    font-family: Poppins-Regular;
+
+}
+
+#foto-leader img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 20vw;
+    border-radius: 15px;
+}
+
+.leaders-name{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.leaders-name span{
+    font-weight: 700;
+}
+/* AKHIR BUPATI & WAKIL BUPATI */
+
+
+/* SEJARAH */
+#sejarah{
+    text-align: center;
+}
+
+#sejarah img{
+    width: 40vw;
+}
+
+/* AKHIR DARI SEJARAH */
+
+/* BERITA */
+.card-content{
+    display: flex;
+    justify-content: space-around;
+    height: fit-content;
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #F5F5F5;
+    width: 25%;
+    text-align: left;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.title-card{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    font-family: Poppins-Medium;
+    text-align: center;
+}
+
+.card img {
+    border-radius: 10px;
+}
+.card li {
+    display: inline-block;
+    padding: 4px;
+    margin-top: 5px;
+    color: #6b6c79 ;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.card ul{
+    line-height: 20px;
+    list-style: none;
+    display: inline;
+    text-align: center;
+    margin: auto;
+}
+.card button {
+    margin-top: 10px;
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #1B9CE3;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+    border-radius: 10px;
+    font-family: Poppins-Medium ;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+/* AKHIR DARI BERITA */
+
+/* MEDIA SOSIAL */
+#media-sosial{
+    display: flex;
+    width: 100%;
+    margin: 2em auto;
+    justify-content: space-around ;
+}
+
+.list-medsos img{
+    height: 10vw;
+    margin: 0 auto;
+}
+
+.list-medsos{
+    font-size: calc(1em - 0.2vw/2);
+    justify-content: space-around;
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    font-family: Poppins-Medium;
+    border-radius: 10px;
+}
+
+/* AKHIR MEDIA SOSIAL */
+
+/* MINI GAMES */
+#games{
+    display: flex;
+    justify-content:center;
+    text-align: left;
+    margin: 2vh;
+}
+
+.games-section {
+    width: fit-content;
+    padding: 2vw;
+    border-radius: 15px;
+}
+
+.games-section p{
+    font-weight: 700;
+}
+
+.games-section.rules{
+    background-color: #F5F5F5;
+}
+
+.games-section.rules li{
+    margin: 2vh auto;
+    list-style: none;
+    background-color: #fcfcfc;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+input[type=text]{
+    margin-top: 1vw;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    padding: 1vh;
+    font-family: Poppins-Medium;
+    border-radius: 10px;
+}
+
+#end-games{
+    font-weight: 700;
+    font-size: 1.5vw;
+}
+
+/* AKHIRMINI GAMES */
+
+/* KANTOR BUPATI BREBES */
+.kantor-maps{
+    display: flex;
+    justify-content:center ;
+    width: 100%;
+}
+.location-maps img{
+    width:80%;
+    border-radius: 15px;
+}
+
+.location-text{
+    margin: auto;
+    width: 25%;
+    background-color:#F5F5F5;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.location-title{
+    font-family: Poppins-Medium;
+    font-size: 1.3em;
+}
+
+.location-text .button {
+    margin: 1em auto;
+}
+/* AKHIR KANTOR BUPATI BREBES */
+
+/* PROFILE */
+
+.profile-web{
+    display: flex;
+    justify-content: center;
+}
+
+.profile-web img{
+    width: 30vw;
+}
+
+#profile-name span{
+    font-weight: 700;
+}
+
+#profile-name{
+    margin: 0 auto;
+    width: calc(30vw - 20%);
+    border-radius: 15px;
+    padding: 15px;
+    background-color:#F5F5F5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.description-profile{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 30vw;
+    text-align: justify;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+#about-me{
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+#contact-me{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+}
+
+#contact-me img{
+    margin: 10px auto;
+    width: fit-content;
+    height: 2.5vw;
+}
+/* AKHIR PROFILE */
+
+/* FOOTER  */
+footer {
+    display: flex;
+    background-color: #232323;
+    color: white;
+    margin-top: 2em;
+}
+
+.footer-content{
+    flex: 1;
+    width: 100%;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto-Medium;
+
+}
+
+.title-footer{
+    font-size: 1.25em;
+    font-family: Poppins-Medium;
+    text-align: center;
+    margin: 1vw;
+}
+
+
+.contact{
+    display: flex;
+    align-items: center;
+    margin-left: 4vw;
+}
+.contact img{
+    height: 4vw;
+    width: fit-content;
+    margin-right: 10px;
+}
+
+#contact-official{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-logo img {
+    height: 4vw;
+    width: fit-content;
+    margin: auto 1vw;
+}
+
+#alamat-footer{
+    display: flex;
+    align-items: center;
+}
+#alamat-footer img {
+    width: 4vw;
+}
+
+#foto-peta{
+    width: 25vw;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.each-statistic{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.each-statistic img {
+    width: 4vw;
+}
+
+.statistic{
+    display: flex;
+    margin: 0.5vw;
+    align-items: center;
+}
+
+#copyright{
+    background-color: #232323;
+    text-align: center;
+    font-family: Poppins-Medium;
+    font-size: 1.2vw;
+    color: white;
+}
+
+
+@media only screen and (max-width: 600px){
+
+    header{
+        justify-content: space-around;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    .logo-brebes a{
+        font-size: 4vw
+    }
+
+    .banner img{
+        height: 50vh;
+    }
+
+    .burger-nav{
+        display: block;
+        height: 40px;
+        cursor: pointer;
+    }
+    
+    .first-title{
+        font-size: 1.2em;
+    }
+    
+    .description-title{
+        font-size: 1em;
+    } 
+
+
+    .foto-leader{
+        justify-content: center;
+        
+    }
+
+    .leaders-name{
+        font-size: 2vw;
+        text-align: center;
+        background-color: #1B9CE3;
+    }
+
+    /* AKHIR BUPATI & WAKIL BUPATI */
+
+    .card-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 60%;
+        margin: 10px auto;
+        border-radius: 10px;
+    }
+    
+    .card button{
+        display: none;
+    }
+
+    #media-sosial{
+        width: 70%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .list-medsos{
+        font-size: 3vw;
+        opacity: 100px;
+        margin: auto;
+    }
+
+    #games{
+        display: flex;
+        align-items: center;
+        text-align: left;
+        margin: 2vh;
+        flex-direction: column;
+    }
+
+    .games-section{
+        display: block;
+        align-items: center;
+        flex-direction: column;
+        width: 70%;
+    }
+
+    #end-games{
+        font-size: 3vw;
+    }
+
+    .games-section.rules{
+        margin-bottom: 2vh;
+    }
+
+    .location-title.games{
+        font-weight: 100;
+    }
+
+    .kantor-maps{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .kantor-maps img{
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    .location-text{
+        width: 70%;
+        font-size: 3vw;
+        padding: 10px;
+    }
+
+    .location-text button{
+        display: none;
+    }
+
+    .profile-web{
+        flex-direction: column;
+    }
+
+    .photo-profile img{
+        width: 50vw;
+    }
+
+    #profile-name{
+        font-size: 3vw;
+        width: fit-content;
+        background-color: none;
+    }
+
+    #about-me{
+        width: 70%;
+    }
+
+    .description-profile{
+        margin: 0 auto;
+        width: 70vw;
+        text-align: justify;
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    #contact-me img{
+        height: 7vw;
+    }
+    
+    footer{
+        margin-top: 1em;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+    
+    .contact img {
+        height: 8vw;
+    }
+
+    .contact-logo img{
+        height: 8vw;
+    }
+    .statistic img {
+        width: 8vw;    
+    }
+
+    #alamat-footer img{
+        width: 10vw;
+    }
+
+    #foto-peta{
+        width: 40vw;
+    }
+
+    #copyright{
+        font-size: 3vw;
+    }
+    
+}
